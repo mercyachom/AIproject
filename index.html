@@ -3,7 +3,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AI Project Addon</title>
-  </head>
+    <style></style>
+   <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <link rel="stylesheet" href="src/index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
   <body>
     <div class="container">
       <header>
@@ -12,22 +15,22 @@
 
       <main>
         <div class="form-container">
-          <form id="ai-generator-form">
+          <form id="feedback-generator-form">
             <input
               type="text"
               placeholder="Enter the topic of your choice!!"
               autofocus
               required
               autocomplete="off"
-              class="instructions"
-              id="user-instructions"
+              class="queries"
+              id="user-queries"
             />
 
             <input type="submit" class="submit-button" />
           </form>
-          <div class="hint">i.e: Jokes, Recipes, Quotes..</div>
+          <div class="example">i.e: Jokes, Recipes, Quotes..</div>
         </div>
-        <div class="" id="poem"></div>
+        <div class="feedback hidden" id="feedback"></div>
       </main>
       <footer>
         This AI project was coded by
@@ -37,10 +40,9 @@
           Github</a
         >
         and is open sourced on
-        <a href="https://frenchpoemsgenerator.netlify.app/" target="_blank">
-          Netlify</a
-        >
+        <a href="https://aiproject123.netlify.app/" target="_blank"> Netlify</a>
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
